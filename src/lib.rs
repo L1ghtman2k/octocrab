@@ -396,7 +396,7 @@ impl OctocrabBuilder {
         self
     }
 
-    /// Set the base url for `Octocrab`.
+    /// Set the base uri for `Octocrab`.
     pub fn base_uri(mut self, base_uri: impl TryInto<Uri>) -> Result<Self> {
         self.base_uri = Some(
             base_uri
